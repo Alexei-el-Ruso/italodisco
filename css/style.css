@@ -5,7 +5,9 @@
     --rosso-bandiera: #CD212A;
     --verdi-bandiera: #008C45;
     --rosso-main: #B2392F;
+    --rosso-dark: #832820;
     --verdi-main: #4E6D48;
+    --verdi-dark: #384f33;
     --claro: #F6F0E9;
     --oscuro: #E8D8C4;
     --fondo: #f4f2f0;
@@ -23,6 +25,29 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', sans-serif;
     b {
         color: var(--vino);
+    }
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
+}
+
+.rosso {
+    background: var(--rosso-main);
+}
+
+.verdi {
+    background: var(--verdi-main);
+}
+
+button:hover {
+    .rosso {
+        background: var(--rosso-dark) !important;
+    }
+    .verdi {
+        background: var(--verdi-dark) !important;
     }
 }
 
