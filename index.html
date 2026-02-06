@@ -5,12 +5,29 @@
   <meta name="description" content="Página de proyecto Intercultural de la Universidad Ibero Puebla.">
   <link href="css/style.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#navbar-placeholder").load("navbar.html");
+    })
+  </script>
+
   <title> Italodisco </title>
 </head>
 <body>
-  <div class="main" id="container">
-    <h1> <b> Italodisco </b> </h1>
-    Hello world!
-    <button class="rosso"> Test </button>
+  <div class="main">
+    <div id="navbar-placeholder"></div>
+
+    <div style="flex: 100%; text-align: center;">
+      Hello world!
+      <button class="rosso"> Test </button>
+      <button class="verde"> Test </button>
+    </div>
+    <div style="flex: 50%;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    </div>
+    <div style="flex: 50%;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    </div>
   </div>
 </body>

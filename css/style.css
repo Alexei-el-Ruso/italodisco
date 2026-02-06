@@ -6,8 +6,10 @@
     --verdi-bandiera: #008C45;
     --rosso-main: #B2392F;
     --rosso-dark: #832820;
+    --rosso-light: #C66458;
     --verdi-main: #4E6D48;
     --verdi-dark: #384f33;
+    --verdi-light: #6f896a;
     --claro: #F6F0E9;
     --oscuro: #E8D8C4;
     --fondo: #f4f2f0;
@@ -32,23 +34,41 @@ button {
     border: none;
     padding: 0.5em 1em;
     box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
+    border-radius: 4px;
 }
 
 .rosso {
     background: var(--rosso-main);
+    color: white;
+    border-bottom: 0.3em solid var(--rosso-dark);
 }
 
-.verdi {
+.rosso:hover{
+    background: var(--rosso-light) !important;
+    border-bottom: 0.3em solid var(--rosso-main);
+}
+
+.rosso:active{
+    background: var(--rosso-main) !important;
+    border-bottom: 0;
+    margin-top: 0.3em;
+}
+
+.verde {
     background: var(--verdi-main);
+    color: white;
+    border-bottom: 0.3em solid var(--verdi-dark);
 }
 
-button:hover {
-    .rosso {
-        background: var(--rosso-dark) !important;
-    }
-    .verdi {
-        background: var(--verdi-dark) !important;
-    }
+.verde:hover{
+    background: var(--verdi-light) !important;
+    border-bottom: 0.3em solid var(--verdi-main);
+}
+
+.verde:active{
+    background: var(--verdi-main) !important;
+    border-bottom: 0;
+    margin-top: 0.3em;
 }
 
 .main {
@@ -56,10 +76,17 @@ button:hover {
     margin: auto;
     padding: 1em 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .carrusel {
