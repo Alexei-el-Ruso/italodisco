@@ -68,13 +68,13 @@
       console.log("Adapting to Mobile device");
       document.body.style.padding = "0";
       document.body.style.fontSize = "12px";
-      document.getElementById("navbar").style.padding = "0 0 3vh";
+      document.getElementById("navbar").wait(10).style.padding = "0 0 3vh";
     }
     else {
       console.log("Adapting to Desktop");
       document.body.style.padding = "6vh 8vw";
       document.body.style.fontSize = "20px";
-      document.getElementById("navbar").style.padding = "0 10vw 3vh";
+      document.getElementById("navbar").wait(10).style.padding = "0 10vw 3vh";
     }
   })
 </script>
