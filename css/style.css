@@ -19,9 +19,8 @@
 body {
     background-color: var(--fondo);
     font-family: 'Montserrat', sans-serif;
-    padding: 6vh 8vw;
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -114,7 +113,6 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
 
 nav a {
     text-decoration: none;
-    color: var(--vino);
 }
 
 img {
