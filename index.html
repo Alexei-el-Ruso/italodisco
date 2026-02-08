@@ -57,24 +57,26 @@
 </body>
 
 <script>
-  let details = navigator.userAgent;
-  let regexp = /android|iphone|kindle|ipad/i;
-  let isMobileDevice = regexp.test(details);
-
-  const collection = document.getElementsByClassName("nav");
-  if (isMobileDevice) {
-    console.log("Adapting to Mobile device");
-    document.body.style.padding = "0";
-    document.body.style.fontSize = "12px";
-    collection[0].style.padding = "0 0 3vh";
-  }
-  else {
-    console.log("Adapting to Desktop");
-    document.body.style.padding = "6vh 8vw";
-    document.body.style.fontSize = "20px";
-    collection[0].style.padding = "0 10vw 3vh";
-  }
   $(document).ready(function(){
     $("#navbar-placeholder").load("navbar.html");
+
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+
+    const collection = document.getElementsByClassName("nav");
+    if (isMobileDevice) {
+      console.log("Adapting to Mobile device");
+      document.body.style.padding = "0";
+      document.body.style.fontSize = "12px";
+      collection[0].style.padding = "0 0 2vh";
+    }
+    else {
+      console.log("Adapting to Desktop");
+      document.body.style.padding = "6vh 8vw";
+      document.body.style.fontSize = "20px";
+      collection[0].style.padding = "0 10vw 3vh";
+    }
+
   })
 </script>
