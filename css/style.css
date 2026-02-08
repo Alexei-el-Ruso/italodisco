@@ -4,12 +4,12 @@
 :root {
     --rosso-bandiera: #CD212A;
     --verdi-bandiera: #008C45;
-    --rosso-main: #B2392F;
-    --rosso-dark: #832820;
-    --rosso-light: #C66458;
-    --verdi-main: #4E6D48;
-    --verdi-dark: #384f33;
-    --verdi-light: #6f896a;
+    --rosso-principale: #B2392F;
+    --rosso-scuro: #832820;
+    --rosso-chiaro: #C66458;
+    --verde-principale: #4E6D48;
+    --verde-scuro: #384f33;
+    --verde-chiaro: #6f896a;
     --claro: #F6F0E9;
     --oscuro: #E8D8C4;
     --fondo: #f4f2f0;
@@ -33,53 +33,63 @@ h1, h2, h3, h4, h5, h6 {
 button {
     border: none;
     padding: 0.5em 1em;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
     border-radius: 4px;
+    box-shadow: 0 0.1em 0.4em 0 black;
 }
 
 .rosso {
-    background: var(--rosso-main);
+    background: var(--rosso-principale);
     color: white;
-    border-bottom: 0.3em solid var(--rosso-dark);
+    border: 0.1em solid var(--rosso-scuro);
+    border-bottom: 0.3em solid var(--rosso-scuro);
 }
 
 .rosso:hover{
-    background: var(--rosso-light) !important;
-    border-bottom: 0.3em solid var(--rosso-main);
+    background: var(--rosso-chiaro) !important;
+    border: 0.1em solid var(--rosso-principale);
+    border-bottom: 0.3em solid var(--rosso-principale);
+    box-shadow: 0 0 0.5em 0.1em var(--rosso-chiaro), 0 0.1em 0.4em 0 #333;
 }
 
 .rosso:active{
-    background: var(--rosso-main) !important;
-    border-bottom: 0;
-    margin-top: 0.3em;
+    background: var(--rosso-principale) !important;
+    border: 0.1em solid var(--rosso-principale);
+    transform: translateY(0.2em);
 }
 
 .verde {
-    background: var(--verdi-main);
+    background: var(--verde-principale);
     color: white;
-    border-bottom: 0.3em solid var(--verdi-dark);
+    border: 0.1em solid var(--verde-scuro);
+    border-bottom: 0.3em solid var(--verde-scuro);
 }
 
 .verde:hover{
-    background: var(--verdi-light) !important;
-    border-bottom: 0.3em solid var(--verdi-main);
+    background: var(--verde-chiaro) !important;
+    border: 0.1em solid var(--verde-principale);
+    border-bottom: 0.3em solid var(--verde-principale);
+    box-shadow: 0 0 0.5em 0.1em var(--verde-chiaro), 0 0.1em 0.4em 0 #333;
 }
 
 .verde:active{
-    background: var(--verdi-main) !important;
+    background: var(--verde-principale) !important;
     border-bottom: 0;
-    margin-top: 0.3em;
+    transform: translateY(0.3em);
 }
 
 .main {
+    padding: 1em;
     background-color: var(--claro);
     margin: auto;
-    padding: 1em 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1em;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .navbar {
@@ -87,8 +97,5 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.carrusel {
-    display: flex;
+    background-image: src("https://www.villeecasali.com/wp-content/uploads/2017/12/dove-passare-natale-italia-2017_cover-1000x682.jpg");
 }
