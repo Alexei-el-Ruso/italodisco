@@ -92,6 +92,7 @@ button {
 
 nav {
     margin: 3vh auto;
+    padding: 0 10vw 3vh;
     display: grid;
     grid-gap: 1em;
     justify-content: center;
