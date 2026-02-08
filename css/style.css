@@ -16,18 +16,17 @@
     --vino: #5E2129;
 }
 
-html, body {
+body {
     background-color: var(--fondo);
     font-family: 'Montserrat', sans-serif;
-    padding: 3vh 3vw;
+    padding: 6vh 8vw;
     margin: 0;
+    font-size: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', sans-serif;
-    b {
-        color: var(--vino);
-    }
+    color: var(--vino);
 }
 
 button {
@@ -92,10 +91,32 @@ button {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.navbar {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: src("https://www.villeecasali.com/wp-content/uploads/2017/12/dove-passare-natale-italia-2017_cover-1000x682.jpg");
+nav {
+    margin: 3vh auto;
+    padding: 0 10vw 3vh ;
+    display: grid;
+    grid-gap: 1em;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr auto 2fr 2fr;
+    border-bottom: 0.3em solid;
+    border-image: linear-gradient(to right, transparent 0, var(--verdi-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, transparent 100%) 1;
+}
+
+nav div {
+    height: 3em;
+    align-content: center;
+}
+
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+    text-align: center;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--vino);
+}
+
+img {
+    width: 100%;
 }
