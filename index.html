@@ -12,7 +12,6 @@
   <div class="main">
     <div id="navbar-placeholder"></div>
     <!-- Área de prueba, borrar o modificar sobre navbar.html al terminar
-    -->
     <nav>
       <a href="#"> <div>
         <h3> Test </h3>
@@ -30,6 +29,7 @@
         <h3> Test </h3>
       </div> </a>
     </nav>
+    -->
 
     <div class="container">
       <div>
@@ -64,10 +64,12 @@
   if (isMobileDevice) {
     console.log("Adapting to Mobile device");
     document.body.style.padding = "0";
+    document.body.style.fontSize = "16px";
   }
   else {
     console.log("Adapting to Desktop");
     document.body.style.padding = "6vh 8vw";
+    document.body.style.fontSize = "20px";
   }
   $(document).ready(function(){
     $("#navbar-placeholder").load("navbar.html");
