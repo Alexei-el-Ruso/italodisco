@@ -90,7 +90,6 @@ button {
     grid-template-columns: repeat(3, 1fr);
 }
 
-
 nav div {
     height: 3em;
     align-content: center;
