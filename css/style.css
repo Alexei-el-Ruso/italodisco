@@ -91,10 +91,13 @@ button {
 }
 
 nav div {
-
     align-content: center;
     text-align: center;
     margin: 0;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 img {
