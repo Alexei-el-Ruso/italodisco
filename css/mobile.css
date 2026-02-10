@@ -1,0 +1,10 @@
+nav {
+    margin: 3vh auto;
+    padding: 0 0 3vh;
+    display: grid;
+    grid-gap: 0;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    border-bottom: 0.3em solid;
+    border-image: linear-gradient(to right, transparent 0, var(--verdi-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, transparent 100%) 1;
+}

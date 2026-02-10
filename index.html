@@ -3,7 +3,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Página de proyecto Intercultural de la Universidad Ibero Puebla.">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+  <link id="dynamic-theme" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <title> Italodisco </title>
@@ -68,11 +69,13 @@
       console.log("Adapting to Mobile device");
       document.body.style.padding = "0";
       document.body.style.fontSize = "12px";
+      document.getElementById("dynamic-theme").setAttribute('href', 'mobile.css');
     }
     else {
       console.log("Adapting to Desktop");
       document.body.style.padding = "6vh 8vw";
-      document.body.style.fontSize = "20px";
+      document.body.style.fontSize = "16px";
+      document.getElementById("dynamic-theme").setAttribute('href', 'mobile.css');
     }
   })
 </script>
