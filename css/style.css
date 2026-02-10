@@ -91,17 +91,10 @@ button {
 }
 
 nav div {
-    height: 3em;
-    align-content: center;
-}
 
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+    align-content: center;
     text-align: center;
     margin: 0;
-}
-
-nav a {
-    text-decoration: none;
 }
 
 img {
