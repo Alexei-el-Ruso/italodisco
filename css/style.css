@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--fondo);
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 20px;
 }
