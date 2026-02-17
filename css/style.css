@@ -15,7 +15,7 @@
     --oscuro: #E8D8C4;
     --fondo: #f4f2f0;
     --vino: #5E2129;
-    --pesto: #292F14
+    --pesto: #292F14;
 }
 
 body {
@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+    transition: 250ms;
     border: none;
     padding: 0.5em 1em;
     border-radius: 4px;
@@ -89,6 +90,7 @@ button:hover { cursor: pointer; }
     background: var(--rosso-principale) !important;
     border: 0.1em solid var(--rosso-principale);
     transform: translateY(0.2em);
+    margin-bottom: 0.2em;
 }
 
 .verde {
@@ -107,8 +109,9 @@ button:hover { cursor: pointer; }
 
 .verde:active{
     background: var(--verde-principale) !important;
-    border-bottom: 0;
-    transform: translateY(0.3em);
+    border: 0.1em solid var(--verde-scuro);
+    transform: translateY(0.2em);
+    margin-bottom: 0.2em;
 }
 
 .img-button {
@@ -119,14 +122,15 @@ button:hover { cursor: pointer; }
     box-shadow: none;
     border-radius: 0;
     color: transparent;
+    font-family: "Cookie", sans-serif !important;
+    font-size: 30px;
+    background-blend-mode: soft-light;
+    background-color: transparent;
 }
 
 .img-button:hover {
     background-color: var(--verde-bandiera);
-    background-blend-mode: soft-light;
     color: var(--vino);
-    font-family: "Cookie", sans-serif !important;
-    font-size: 30px;
 }
 
 .img-button:active {
