@@ -23,6 +23,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 18px;
+    background-image: url("https://www.teahub.io/photos/full/21-211919_50-christmas-plaid-wallpapers-fabric-texture-seamless-pattern.jpg");
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 h1 {
@@ -64,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 button {
     transition: 250ms;
     border: none;
-    padding: 0.5em 1em;
+    padding: 10px;
     border-radius: 4px;
     box-shadow: 0 0.1em 0.4em 0 black;
     font: inherit;
@@ -73,45 +76,49 @@ button {
 button:hover { cursor: pointer; }
 
 .rosso {
-    background: var(--rosso-principale);
     color: white;
-    border: 0.1em solid var(--rosso-scuro);
-    border-bottom: 0.3em solid var(--rosso-scuro);
+    background: var(--rosso-principale);
+    border: 2px;
+    border-bottom: 6px;
+    border-style: solid;
+    border-color: var(--rosso-scuro);
 }
 
 .rosso:hover{
-    background: var(--rosso-chiaro) !important;
-    border: 0.1em solid var(--rosso-principale);
-    border-bottom: 0.3em solid var(--rosso-principale);
-    box-shadow: 0 0 0.5em 0.1em var(--rosso-chiaro), 0 0.1em 0.4em 0 #333;
+    background: var(--rosso-chiaro);
+    border-color: var(--rosso-principale);
 }
 
 .rosso:active{
-    background: var(--rosso-principale) !important;
-    border: 0.1em solid var(--rosso-principale);
-    transform: translateY(0.2em);
-    margin-bottom: 0.2em;
+    background: var(--rosso-principale);
+    border: 2px;
+    margin-bottom: 4px;
+    border-style: solid;
+    border-color: var(--rosso-scuro);
+    transform: translateY(4px);
 }
 
 .verde {
-    background: var(--verde-principale);
     color: white;
-    border: 0.1em solid var(--verde-scuro);
-    border-bottom: 0.3em solid var(--verde-scuro);
+    background: var(--verde-principale);
+    border: 2px;
+    border-bottom: 6px;
+    border-style: solid;
+    border-color: var(--verde-scuro);
 }
 
 .verde:hover{
-    background: var(--verde-chiaro) !important;
-    border: 0.1em solid var(--verde-principale);
-    border-bottom: 0.3em solid var(--verde-principale);
-    box-shadow: 0 0 0.5em 0.1em var(--verde-chiaro), 0 0.1em 0.4em 0 #333;
+    background: var(--verde-chiaro);
+    border-color: var(--verde-principale);
 }
 
 .verde:active{
-    background: var(--verde-principale) !important;
-    border: 0.1em solid var(--verde-scuro);
-    transform: translateY(0.2em);
-    margin-bottom: 0.2em;
+    background: var(--verde-principale);
+    border: 2px;
+    margin-bottom: 4px;
+    border-style: solid;
+    border-color: var(--verde-scuro);
+    transform: translateY(4px);
 }
 
 .img-button {
@@ -126,6 +133,7 @@ button:hover { cursor: pointer; }
     font-size: 30px;
     background-blend-mode: soft-light;
     background-color: transparent;
+    background-position: center top;
 }
 
 .img-button:hover {
@@ -137,19 +145,8 @@ button:hover { cursor: pointer; }
     background-color: var(--verde-chiaro) !important;
 }
 
-.main {
-    padding: 1em;
-    background-color: var(--claro);
-    margin: auto;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
-}
-
-.container {
-    display: grid;
-    grid-gap: 1em;
-    justify-content: space-around;
-    grid-template-columns: repeat(3, 1fr);
+img {
+    width: 100%;
 }
 
 nav {
@@ -178,6 +175,17 @@ nav a:hover {
     background-color: #fba;
 }
 
-img {
-    width: 100%;
+.main {
+    padding: 1em;
+    background-color: var(--claro);
+    margin: auto;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1em;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
 }
