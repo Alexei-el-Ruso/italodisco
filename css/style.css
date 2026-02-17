@@ -4,7 +4,7 @@
 
 :root {
     --rosso-bandiera: #CD212A;
-    --verdi-bandiera: #008C45;
+    --verde-bandiera: #008C45;
     --rosso-principale: #B2392F;
     --rosso-scuro: #832820;
     --rosso-chiaro: #C66458;
@@ -15,46 +15,50 @@
     --oscuro: #E8D8C4;
     --fondo: #f4f2f0;
     --vino: #5E2129;
+    --pesto: #292F14
 }
 
 body {
     background-color: var(--fondo);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h1 {
     font-size: 75px;
-    background-color: var(--verde-chiaro);
     font-family: 'Cookie', sans-serif !important;
 }
 h2 {
     font-size: 40px;
-    background-color: var(--rosso-chiaro);
 }
 h3 {
     font-size: 35px;
-    background-color: var(--verde-chiaro);
 }
 h4 {
     font-size: 30px;
-    background-color: var(--rosso-chiaro);
 }
 h5 {
     font-size: 25px;
-    background-color: var(--verde-chiaro);
 }
 h6 {
     font-size: 20px;
+}
+
+h1, h3, h5 {
+    color: var(--vino);
+    background-color: var(--verde-chiaro);
+}
+
+h2, h4, h6 {
+    color: var(--pesto);
     background-color: var(--rosso-chiaro);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', sans-serif;
-    color: var(--vino);
-    width: 100%;
     margin: 0;
+    padding: 5px;
 }
 
 button {
@@ -62,7 +66,10 @@ button {
     padding: 0.5em 1em;
     border-radius: 4px;
     box-shadow: 0 0.1em 0.4em 0 black;
+    font: inherit;
 }
+
+button:hover { cursor: pointer; }
 
 .rosso {
     background: var(--rosso-principale);
@@ -104,6 +111,26 @@ button {
     transform: translateY(0.3em);
 }
 
+.img-button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: none;
+    border-radius: 0;
+    color: transparent;
+}
+
+.img-button:hover {
+    background-color: var(--verde-bandiera);
+    background-blend-mode: soft-light;
+    color: var(--vino);
+}
+
+.img-button:active {
+    background-color: var(--verde-chiaro) !important;
+}
+
 .main {
     padding: 1em;
     background-color: var(--claro);
@@ -126,7 +153,7 @@ nav {
     grid-gap: 0;
     grid-template-columns: 2fr 2fr 5fr 2fr 2fr;
     border-bottom: 0.3em solid;
-    border-image: linear-gradient(to right, transparent 0, var(--verdi-bandiera) 15%, var(--verdi-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, var(--rosso-bandiera) 85%, transparent 100%) 1;
+    border-image: linear-gradient(to right, transparent 0, var(--verde-bandiera) 15%, var(--verde-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, var(--rosso-bandiera) 85%, transparent 100%) 1;
 }
 
 nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
@@ -143,8 +170,4 @@ nav a {
 }
 nav a:hover {
     background-color: #fba;
-}
-
-img {
-    width: 100%;
 }
