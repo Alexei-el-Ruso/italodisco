@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 :root {
     --rosso-bandiera: #CD212A;
@@ -18,14 +19,41 @@
 
 body {
     background-color: var(--fondo);
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 20px;
+}
+
+h1 {
+    font-size: 75px;
+    background-color: var(--verde-chiaro);
+    font-family: 'Cookie', sans-serif !important;
+}
+h2 {
+    font-size: 40px;
+    background-color: var(--rosso-chiaro);
+}
+h3 {
+    font-size: 35px;
+    background-color: var(--verde-chiaro);
+}
+h4 {
+    font-size: 30px;
+    background-color: var(--rosso-chiaro);
+}
+h5 {
+    font-size: 25px;
+    background-color: var(--verde-chiaro);
+}
+h6 {
+    font-size: 20px;
+    background-color: var(--rosso-chiaro);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', sans-serif;
     color: var(--vino);
+    width: 100%;
+    margin: 0;
 }
 
 button {
@@ -90,26 +118,30 @@ button {
     grid-template-columns: repeat(3, 1fr);
 }
 
-nav div {
-    align-content: center;
-    text-align: center;
-    margin: 0;
-}
-
 nav {
     height: auto;
     margin: 3vh auto;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: 2fr 2fr 5fr 2fr 2fr;
     border-bottom: 0.3em solid;
-    border-image: linear-gradient(to right, transparent 0, var(--verdi-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, transparent 100%) 1;
+    border-image: linear-gradient(to right, transparent 0, var(--verdi-bandiera) 15%, var(--verdi-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, var(--rosso-bandiera) 85%, transparent 100%) 1;
+}
+
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+    background-color: transparent !important;
+    text-align: center;
 }
 
 nav a {
+    display: flex;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+nav a:hover {
+    background-color: #fba;
 }
 
 img {
