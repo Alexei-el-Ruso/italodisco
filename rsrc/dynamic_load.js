@@ -1,6 +1,7 @@
 $(document).ready(
     function(){
-        $("#navbar-placeholder").load("navbar.html");
+        $("#navbar-placeholder").load("rsrc/navbar.html");
+        $("#footer-placeholder").load("rsrc/footing.html");
 
         let details = navigator.userAgent;
         let regexp = /android|iphone|kindle|ipad/i;
