@@ -172,6 +172,12 @@ nav a:hover {
     background-color: #fba;
 }
 
+table, tr, td, th {
+    border: 1px solid var(--verde-chiaro);
+    border-collapse: collapse;
+    font: inherit;
+}
+
 .main {
     padding: 1em;
     background-color: var(--claro);
