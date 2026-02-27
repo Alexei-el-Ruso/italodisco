@@ -1,7 +1,7 @@
 $(document).ready(
     function(){
-        $("#navbar-placeholder").load("rsrc/navbar.html");
-        $("#footer-placeholder").load("rsrc/footing.html");
+        $("#navbar-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footing.html");
 
         let details = navigator.userAgent;
         let regexp = /android|iphone|kindle|ipad/i;
@@ -9,7 +9,7 @@ $(document).ready(
 
         if (isMobileDevice) {
             console.log("Adapting to Mobile device");
-            document.body.style.padding = "0";
+            document.body.style.padding = "1vh 1vw";
             document.body.style.fontSize = "12px";
             document.getElementById("dynamic-theme").setAttribute('href', 'css/mobile.css');
         }

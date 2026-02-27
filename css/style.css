@@ -22,7 +22,7 @@ body {
     background-color: var(--fondo);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    font-size: 18px;
+    font-size: 1vh;
     background-image: url("../img/bg2.jpeg");
     background-repeat: repeat;
     background-position: center;
@@ -30,23 +30,23 @@ body {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 10vh;
     font-family: 'Cookie', sans-serif !important;
 }
 h2 {
-    font-size: 40px;
+    font-size: 5vh;
 }
 h3 {
-    font-size: 35px;
+    font-size: 4vh;
 }
 h4 {
-    font-size: 30px;
+    font-size: 3vh;
 }
 h5 {
-    font-size: 25px;
+    font-size: 2vh;
 }
 h6 {
-    font-size: 20px;
+    font-size: 1vh;
 }
 
 h1, h3, h5 {
@@ -186,6 +186,10 @@ nav .dropdown > a:hover {
     background-color: #fba;
 }
 
+footer {
+    text-align: center;
+}
+
 table, tr, td, th {
     border: 1px solid var(--verde-chiaro);
     border-collapse: collapse;
@@ -200,14 +204,7 @@ table, tr, td, th {
     box-shadow: rgba(0, 0, 0, 0.2) 0 12px 28px 0, rgba(0, 0, 0, 0.1) 0 2px 4px 0, rgba(255, 255, 255, 0.05) 0 0 0 1px inset;
 }
 
-.container {
-    display: grid;
-    grid-gap: 1em;
-    justify-content: space-around;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.authorbox {
-    display: flex;
+.author-box {
     width: 100%;
+    margin: 10vw 20vw 30vw 40vw;
 }
