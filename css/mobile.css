@@ -14,11 +14,10 @@ nav {
 }
 
 nav .dropdown {
-    visibility: hidden;
     border-top: 0.3em solid;
     border-image: linear-gradient(to right, transparent 0, var(--verde-bandiera) 15%, var(--verde-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, var(--rosso-bandiera) 85%, transparent 100%) 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
 }
