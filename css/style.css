@@ -152,6 +152,7 @@ img {
 
 a {
     text-decoration: none;
+    z-index: 10;
 }
 
 nav {
