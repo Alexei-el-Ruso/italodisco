@@ -185,5 +185,34 @@ table, tr, td, th {
 
 .author-box {
     width: 100%;
-    margin: 10vw 20vw 30vw 40vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+}
+
+.ab-l {
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+}
+.ab-r {
+    grid-template-columns: 3fr 1fr;
+    text-align: right;
+}
+
+.name {
+    padding: 0.2em;
+    color: var(--pesto);
+    font-family: 'Cookie', sans-serif !important;
+    font-weight: bold;
+    font-size: 5vh;
+    background-color: var(--rosso-chiaro);
+}
+
+.ab-l > .name {
+    text-align: right !important;
+}
+
+.ab-r > .name {
+    text-align: left !important;
 }
