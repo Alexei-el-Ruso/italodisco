@@ -154,7 +154,7 @@ button:hover { cursor: pointer; }
     border-radius: 0;
     color: var(--pesto);
     font-family: "Cookie", sans-serif !important;
-    font-size: 3vw;
+    font-size: 2.5em;
     background-color: transparent;
 }
 
