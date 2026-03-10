@@ -2,6 +2,11 @@ nav {
     padding: 0 2vw 2vh;
 }
 
+nav .dropdown > a {
+    color: var(--pesto);
+    font-size: 3vh;
+}
+
 .container {
     grid-template-columns: repeat(3, 1fr);
 }
