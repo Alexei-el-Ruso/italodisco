@@ -2,8 +2,8 @@ nav {
     padding: 0 2vw 2vh;
 }
 
-nav .dropdown > a {
-    font-size: 3vh;
+nav .dropdown > div {
+    font-size: 3.5vh;
 }
 
 .container {

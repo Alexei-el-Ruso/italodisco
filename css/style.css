@@ -146,6 +146,42 @@ button:hover { cursor: pointer; }
     background-color: var(--verde-chiaro) !important;
 }
 
+.nav-button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--pesto);
+    font-family: "Cookie", sans-serif !important;
+    font-size: 3vw;
+    background-color: transparent;
+}
+
+.nbr {
+    border-top: 0.5vh solid var(--rosso-bandiera);
+}
+
+.nbr:hover {
+    background-color: var(--rosso-bandiera);
+}
+
+.nbb {
+    border-top: 0.5vh solid white;
+}
+
+.nbb:hover {
+    background-color: white;
+}
+
+.nbv {
+    border-top: 0.5vh solid var(--verde-bandiera);
+}
+
+.nbv:hover {
+    background-color: var(--verde-bandiera);
+}
+
 img {
     width: 100%;
 }
@@ -225,15 +261,14 @@ table, tr, td, th {
 }
 
 nav .dropdown {
-    border-top: 0.3em solid;
-    border-image: linear-gradient(to right, transparent 0, var(--verde-bandiera) 15%, var(--verde-bandiera) 33.33%, white 33.33%, white 66.67%, var(--rosso-bandiera) 66.67%, var(--rosso-bandiera) 85%, transparent 100%) 1;
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
 }
 
-nav .dropdown > a {
+nav .dropdown > div {
     display: flex;
     width: 100%;
     height: 100%;
@@ -241,10 +276,5 @@ nav .dropdown > a {
     justify-content: center;
     text-align: center;
     padding: 1vw;
-    color: var(--pesto);
     font-family: 'Playfair Display', sans-serif;
-}
-
-nav .dropdown > a:hover {
-    background-color: #fba;
 }
