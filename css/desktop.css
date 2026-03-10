@@ -3,9 +3,6 @@ nav {
 }
 
 nav .dropdown > a {
-    padding: 1vw;
-    color: var(--pesto);
-    font-family: 'Playfair Display', sans-serif;
     font-size: 3vh;
 }
 
